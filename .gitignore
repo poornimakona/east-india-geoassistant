@@ -1,0 +1,15 @@
+.env
+.env.*
+!.env.example
+*password*.json
+app-password.json
+kibana-password.json
+user.json
+role.json
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.git/
+node_modules/
+anonymous_test.txt

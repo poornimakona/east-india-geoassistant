@@ -1,0 +1,13 @@
+
+flowchart TD
+    A[GeoPackage school dataset] --> B[GeoPackage to GeoJSONL export]
+    B --> C[School feature records]
+    C --> D[Elasticsearch indexing]
+    E[User enters school name] --> F[Streamlit interface]
+    F --> G[School search function]
+    G --> H[Elasticsearch phrase matching]
+    D --> H
+    H --> I{Matching records found?}
+    I -->|Yes| J[Display school names and available properties]
+    I -->|No| K[Display no matching schools]
+    L[Evaluation metrics] --> M[Unit tests]
